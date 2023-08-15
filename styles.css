@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+}
+.fondo{
+    background-image: url(./assets/199315446-templo-griego-antiguo-ilustración-de-dibujos-animados-vectoriales-del-antiguo-templo-griego-con.webp);
+    background-repeat:no-repeat;
+   background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+
+}
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titulo {
+  color: #9f0202;
+  font-size: 77px;
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.subtitulo {
+  
+  font-size: 20px;
+  background-color: #c1c1d0;
+  border: 5px inset;
+  color: #000000;
+}
+
+.tarjetas, .tarjetas-ataques {
+  display: flex;
+  gap: 30px;
+}
+
+.tarjeta-de-mokepon {
+  height: 227px;
+  width: 142px;
+    background: #cdcdcd;;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column-reverse;
+    border: 10px inset;
+
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  border: 4px dotted #ddc706;
+  background: #a3a3a3;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #acb6ce;
+}
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-de-ataque {
+  
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: transparent;
+  width: 80px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  background-color: #c1c1d0;
+  border: 5px inset;
+  color: #747269;
+}
+
+#mensajes {
+  width: 280px;
+  background: #EEEEEE;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 4px dotted #ddc706;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: #898f11;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+img{
+  height: 230px;
+  width: 170px;
+}
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #cdcdcd;;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  
+    border: 10px inset;
+
+  
+}
+#mapa{
+height: 372px;
+}
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ver-mapa button {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: white;
+  border: 2px solid white;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+}
+
+@media (max-width: 560px) {
+  .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  #ver-mapa div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
